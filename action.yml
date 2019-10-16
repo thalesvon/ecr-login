@@ -1,0 +1,9 @@
+# action.yml
+name: 'ECR Login'
+description: 'Docker login for AWS ECR private'
+outputs:
+  login-string: # id of output
+    description: 'Docker Login string'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
