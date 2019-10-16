@@ -10,6 +10,7 @@ LABEL com.github.actions.name="GitHub Action for AWS ECR Login"
 LABEL com.github.actions.description="ECR Login for Github Actions v2"
 LABEL com.github.actions.icon="box"
 LABEL com.github.actions.color="yellow"
+COPY LICENSE README.md /
 
 ENV DOCKERVERSION=18.06.1-ce
 RUN apt-get update && \
