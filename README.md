@@ -1,5 +1,7 @@
 # ECR login docker action
 
+[![Actions Status](https://github.com/thalesvon/ecr-login/workflows/Test/badge.svg)](https://github.com/thalesvon/ecr-login/actions)
+
 This action gets a login string to AWS ECR and returns as an output of the action.
 
 This action is only intended to be used for the command `aws ecr get-login`. For other awscli commands, use [actions/aws/cli][1]
