@@ -9,6 +9,8 @@ This action is only intended to be used for the command `aws ecr get-login`. For
 ## Inputs
 
 There are no inputs defined on `actions.yml`. Everything you write on `args:` is passed to the entrypoint.
+It is mandatory to pass `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY`.
+Configure both as [secrets][2]
 
 ## Outputs
 
@@ -37,3 +39,4 @@ docker login -u AWS -p <pass> <ecr-url>
       run: ${{ steps. ecr-login.outputs.login-string }}
 ```
 [1]:https://github.com/actions/aws
+[2]:https://help.github.com/en/articles/virtual-environments-for-github-actions#creating-and-using-secrets-encrypted-variables
