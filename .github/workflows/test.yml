@@ -1,8 +1,7 @@
 name: Test
-on: 
-  push:
-    branches:
-      - master
+on:
+  schedule:
+    - cron:  '* * */15 * *'
 jobs:
   build:
     runs-on: ubuntu-latest
